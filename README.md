@@ -1,38 +1,27 @@
-<<<<<<< HEAD
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# BNMO - FRONTEND
+## Prasyarat
+1. Node.js 12.22.0 atau terbaru
+2. MacOS, Windows (termasuk WSL), dan / atau Linux
 
-## Getting Started
-
-First, run the development server:
+## Cara menjalankan
+1. Pastikan backend sudah berjalan. Cara menjalankan backend dapat dilihat di repo bnmo-backend
+2. Menjalankan command berikut secara berurutan
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Buka [http://localhost:3000](http://localhost:3000) untuk melihat hasil website yang dibuat
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Teknologi yang digunakan
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+- Node.js v16.15.1
+- Bootstrap 5
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Design Pattern 
+1. Chain of Responsibility : Pada bagian submit di komponen transfer, dilakukan pengecekan apakah username yang dimasukkan sama dengan username pengguna saat itu sehingga bagian backend tidak perlu melakukan pengecekan serupa. Jika ternyata sama, permintaan tidak akan diteruskan ke bagian backend
+2. Builder : Karena bagian backend hanya dapat menerima data dengan nama tertentu, dilakukan builder dengan bantuan formData untuk membuat struktur data yang ketika nantinya akan diterima oleh backend, bagian backend dapat menerima data tersebut dan membacanya dengan baik
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 =======
-# bnmo-frontend
->>>>>>> f6cce7c27ddbc123d62f44080d9fe56905366d1e
+### Marcellus Michael Herman Kahari - 13520057
