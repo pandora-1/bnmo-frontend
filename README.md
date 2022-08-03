@@ -19,5 +19,9 @@ Buka [http://localhost:3000](http://localhost:3000) untuk melihat hasil website 
 - Node.js v16.15.1
 - Bootstrap 5
 
+## Design Pattern 
+1. Chain of Responsibility : Pada bagian submit di komponen transfer, dilakukan pengecekan apakah username yang dimasukkan sama dengan username pengguna saat itu sehingga bagian backend tidak perlu melakukan pengecekan serupa. Jika ternyata sama, permintaan tidak akan diteruskan ke bagian backend
+2. Builder : Karena bagian backend hanya dapat menerima data dengan nama tertentu, dilakukan builder dengan bantuan formData untuk membuat struktur data yang ketika nantinya akan diterima oleh backend, bagian backend dapat menerima data tersebut dan membacanya dengan baik
+
 =======
 ### Marcellus Michael Herman Kahari - 13520057
