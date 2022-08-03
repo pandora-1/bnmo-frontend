@@ -7,7 +7,7 @@ const Hero = () => {
           <div class="row">
             <div class="col-lg-6 d-flex flex-column justify-content-center">
               <h1 data-aos="fade-up">BNMO : We offer the greatest financial technology</h1>
-              <h3 style={{color: "#454444"}} data-aos="fade-up" data-aos-delay="400">We are team of talented and underpaid developers</h3>
+              <h3 style={{color: "#454444"}} data-aos="fade-up" data-aos-delay="400">We shall never deny a guest, even the most ridiculous request</h3>
               <div data-aos="fade-up" data-aos-delay="600">
                 <div class="text-center text-lg-start">
                 </div>

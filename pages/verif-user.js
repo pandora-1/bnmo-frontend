@@ -16,7 +16,7 @@ export default function VerifUserPage() {
               <main className={styles.backgroundmain}>
                 <div className='row flex-nowrap'>
                   <SidebarAdmin />
-                  <div flex="col" style={{ marginTop: "5vh"}}>
+                  <div flex="col" style={{ marginTop: "5vh", width: "75%"}}>
                     <h1>Verif User</h1>
                     <VerifUser  />
                   </div>
