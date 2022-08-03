@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { useForm } from "react-hook-form";
 import config from "../../config";
+import axios from 'axios';
 
 const RegisterComponent = () => {
     const { register, handleSubmit } = useForm();
@@ -13,10 +14,18 @@ const RegisterComponent = () => {
         formData.append("password", data.password);
         formData.append("username", data.username);
         console.log(formData)
-        const res = await fetch(`${config.urlBackend}/register`, {
-            method: "POST",
-            body: formData,
-        }).then((res) => alert("Sukses terdaftar! Silahkan menunggu verifikasi dari admin"))
+        axios({
+            method: "post",
+            url: `${config.urlBackend}/register`,
+            data: formData,
+            headers: { "Content-Type": "multipart/form-data" },
+          })
+            .then(function (response) {
+              alert("Sukses terdaftar! Silahkan menunggu verifikasi dari admin");
+            })
+            .catch(function (response) {
+              alert("Username sudah terdaftar!")
+            });
     };
 
     return(
