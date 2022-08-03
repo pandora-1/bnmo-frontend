@@ -4,7 +4,8 @@
 2. MacOS, Windows (termasuk WSL), dan / atau Linux
 
 ## Cara menjalankan
-Menjalankan command berikut secara berurutan
+1. Pastikan backend sudah berjalan. Cara menjalankan backend dapat dilihat di repo bnmo-backend
+2. Menjalankan command berikut secara berurutan
 
 ```bash
 npm install
